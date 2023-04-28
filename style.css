@@ -13,6 +13,26 @@ html {
     padding: 0em 1em;
   }
 
+  main{
+    display: grid;
+    grid-template-areas: "welcome welcome" 
+                        "hero hero"
+                        "upgrades reviews";
+  }
+
+  .welcome{
+    grid-area: welcome;
+  }
+  .hero{
+    grid-area: hero;
+  }
+  .upgrades{
+    grid-area: upgrades;
+  }
+  .reviews{
+    grid-area: reviews;
+  }
+
   header p{
     float: right;
   }
