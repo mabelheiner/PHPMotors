@@ -49,7 +49,7 @@ html {
     color: white;
   }
 
-  a {
+  nav a {
     text-decoration: none;
     color: white;
   }
@@ -80,4 +80,69 @@ html {
   .hero button{
     background-color: #4c96d7;
     padding: 1em;
+  }
+
+  .upgrades{
+    display: grid;
+    grid-template-areas: "title title" 
+                        "capacitor decals"
+                        "capacitor-label decals-label"
+                        "stickers hub-caps";
+
+    grid-gap: 1em;
+  }
+
+  .upgrades div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .upgrades-title{
+    grid-area: title;
+  }
+
+  .capacitor{
+    grid-area: capacitor;
+    background-color: #4c96d7;
+  }
+
+  .capacitor img{
+    width: 50%;
+  }
+
+  .capacitor-label{
+    grid-area: capacitor-label;
+  }
+
+  .decals{
+    grid-area: decals;
+    background-color: #4c96d7;
+  }
+
+  .decals-label{
+    grid-area: decals-label
+  }
+
+  .decals img{
+    width: 50%;
+  }
+
+  .stickers{
+    grid-area: stickers;
+  }
+
+  .stickers img{
+    width: 50%;
+    background-color: #4c96d7;
+  }
+
+  .hub-cap{
+    grid-area: hub-caps;
+  }
+
+  .hub-cap img{
+    width: 50%;
+    background-color: #4c96d7;
   }
