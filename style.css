@@ -16,3 +16,32 @@ html {
   header p{
     float: right;
   }
+  
+  nav ul li{
+    padding: .5em;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #3a3a3a;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .active{
+    background-color: #4c96d7;
+    color: black;
+  }
+
+  footer{
+    border-top: 3px solid #3a3a3a;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }

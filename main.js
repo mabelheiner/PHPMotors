@@ -1,0 +1,1 @@
+document.querySelector('#lastmodified').textContent = new Date(document.lastModified).toLocaleDateString('en-us', {year:"numeric", month:"long", day:"numeric"});
