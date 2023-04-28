@@ -45,3 +45,19 @@ html {
     margin: 0px;
     padding: 0px;
   }
+
+  .hero{
+    position: relative;
+  }
+
+  .hero-text{
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    color: #4c96d7;
+  }
+
+  .hero button{
+    background-color: #4c96d7;
+    padding: 1em;
+  }
