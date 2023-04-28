@@ -18,6 +18,8 @@ html {
     grid-template-areas: "welcome welcome" 
                         "hero hero"
                         "upgrades reviews";
+
+    grid-gap: 2em;
   }
 
   .welcome{
@@ -25,6 +27,9 @@ html {
   }
   .hero{
     grid-area: hero;
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
   .upgrades{
     grid-area: upgrades;
@@ -87,7 +92,8 @@ html {
     grid-template-areas: "title title" 
                         "capacitor decals"
                         "capacitor-label decals-label"
-                        "stickers hub-caps";
+                        "stickers hub-caps"
+                        "stickers-label hub-caps-label";
 
     grid-gap: 1em;
   }
@@ -122,7 +128,7 @@ html {
   }
 
   .decals-label{
-    grid-area: decals-label
+    grid-area: decals-label;
   }
 
   .decals img{
@@ -131,15 +137,24 @@ html {
 
   .stickers{
     grid-area: stickers;
+    background-color: #4c96d7;
+  }
+
+  .stickers-label{
+    grid-area: stickers-label;
   }
 
   .stickers img{
     width: 50%;
-    background-color: #4c96d7;
   }
 
   .hub-cap{
     grid-area: hub-caps;
+    background-color: #4c96d7;
+  }
+
+  .hub-caps-labels{
+    grid-area: hub-caps-label;
   }
 
   .hub-cap img{
