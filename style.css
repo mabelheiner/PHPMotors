@@ -87,6 +87,10 @@ html {
     padding: 1em;
   }
 
+  .hero-button {
+    display: none;
+  }
+
   .upgrades{
     display: grid;
     grid-template-areas: "title title" 
@@ -160,4 +164,37 @@ html {
   .hub-cap img{
     width: 50%;
     background-color: #4c96d7;
+  }
+
+  @media screen and (max-width: 1000px) {
+    body{
+      width: 100%;
+    }
+    main{
+      grid-template-areas: "welcome" 
+                          "hero"
+                          "hero-button"
+                          "reviews"
+                          "upgrades";
+  
+      grid-gap: 2em;
+    }
+
+    main img{
+      width: 100%;
+    }
+
+    .hero-text{
+      top: 0px;
+      left: 0px;
+    }
+
+    .hero-text button{
+      display: none;
+    }
+
+    .hero-button{
+      display: grid;
+      grid-area: hero-button;
+    }
   }
