@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+html {
+    background-image: url('../images/site/checkerboard.jpg');
+    width: 97%;
+  }
+  
+  body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: white;
+    border: 3px solid #4c96d7;
+    padding: 1em;
+  }
+
+  main{
+    grid-template-areas: "welcome" 
+                        "hero"
+                        "button-hero"
+                        "reviews"
+                        "upgrades";
+
+    grid-gap: 2em;
+  }
+
+  main img{
+    width: 80%;
+  }
+
+  .hero-text{
+    top: 0px;
+    left: 0px;
+    color: darkblue;
+  }
+
+  .hero-text button{
+    display: none;
+  }
+
+  .button-hero{
+    display: grid;
+    grid-area: button-hero;
+    background-color: #4c96d7;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .welcome{
+    grid-area: welcome;
+  }
+
+  .hero{
+    grid-area: hero;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .upgrades{
+    grid-area: upgrades;
+  }
+  .reviews{
+    grid-area: reviews;
+  }
+
+  header p{
+    float: right;
+  }
+  
+  nav {
+    width: 100%;
+    font-size: smaller;
+    margin: 0px;
+  }
+
+  nav ul li{
+    padding: .5em;
+    width: fit-content;
+    text-align: center;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #3a3a3a;
+    color: white;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .active{
+    background-color: darkblue;
+    text-decoration: none;
+  }
+
+  footer{
+    border-top: 3px solid #3a3a3a;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .upgrades{
+    display: grid;
+    grid-template-areas: "title title" 
+                        "capacitor decals"
+                        "capacitor-label decals-label"
+                        "stickers hub-caps"
+                        "stickers-label hub-caps-label";
+
+    grid-gap: 1em;
+  }
+
+  .upgrades div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .upgrades-title{
+    grid-area: title;
+  }
+
+  .capacitor{
+    grid-area: capacitor;
+    background-color: #4c96d7;
+  }
+
+  .capacitor img{
+    width: 50%;
+  }
+
+  .capacitor-label{
+    grid-area: capacitor-label;
+  }
+
+  .decals{
+    grid-area: decals;
+    background-color: #4c96d7;
+  }
+
+  .decals-label{
+    grid-area: decals-label;
+  }
+
+  .decals img{
+    width: 50%;
+  }
+
+  .stickers{
+    grid-area: stickers;
+    background-color: #4c96d7;
+  }
+
+  .stickers-label{
+    grid-area: stickers-label;
+  }
+
+  .stickers img{
+    width: 50%;
+  }
+
+  .hub-cap{
+    grid-area: hub-caps;
+    background-color: #4c96d7;
+  }
+
+  .hub-caps-labels{
+    grid-area: hub-caps-label;
+  }
+
+  .hub-cap img{
+    width: 50%;
+    background-color: #4c96d7;
+  }
+
+  .error-main{
+    display: grid;
+    grid-template-areas: "error-title"
+                          "error-message";
+    grid-gap: 0px;
+  }
+
+  .error-title{
+    grid-area: error-title;
+  }
+
+  .error-message{
+    grid-area: error-message;
+  }
+
+  @media screen and (min-width: 768px) {
+    body{
+      width: 100%;
+    }
+    main{
+      display: grid;
+      grid-template-areas: "welcome welcome" 
+                          "hero hero"
+                          "upgrades reviews";
+  
+      grid-gap: 2em;
+    }
+
+    nav{
+      font-size: medium;
+    }
+    .hero-text{
+      position: absolute;
+      top: 0px;
+      left: 16px;
+    }
+  
+    .hero button{
+      display: grid;
+      background-color: #4c96d7;
+      padding: 1em;
+    }
+  
+    .button-hero {
+      display: none;
+    }
+  
+  }
+
+  .error-main{
+    display: grid;
+    grid-template-areas: "error-title"
+                          "error-message";
+  }
+
+  .error-title{
+    grid-area: error-title;
+  }
+
+  .error-message{
+    grid-area: error-message;
+  }
